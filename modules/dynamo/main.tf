@@ -16,4 +16,8 @@ resource "aws_dynamodb_table" "this" {
     type = var.range_key.type
   }
 
+  server_side_encryption {
+    enabled = true
+  }
+
 }
