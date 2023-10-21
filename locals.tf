@@ -14,10 +14,10 @@ locals {
 
   security_groups_prefix = "${local.name}-security-group"
 
-  frontend_bucket_name = "galar.dev.condor.com"
+  frontend_bucket_name = "dev.condor.com"
   frontend_folder      = "./resources/frontend"
 
-  logging_bucket_name = "galar.dev.condor-logs"
+  logging_bucket_name = "dev.condor-logs"
 
 
   tags = {

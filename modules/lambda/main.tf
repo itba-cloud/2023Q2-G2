@@ -11,6 +11,10 @@ resource "aws_lambda_function" "index" {
     variables = var.env_variables
   }
 
+  tracing_config {
+    mode = "Active"
+  }
+
   role = var.role_arn
 }
 
