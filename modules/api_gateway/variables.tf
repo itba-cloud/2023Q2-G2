@@ -21,15 +21,15 @@ variable "authorizer" {
 variable "methods" {
   description = "The methods of the API Gateway"
   type = list(object({
-    path        = string
+    path = string
     methods = list(object({
-        http_method = string
-        handler    = string
-        zip_name   = string
-        env_variables = map(any)
-        name = string
-        }))
+      http_method   = string
+      handler       = string
+      zip_name      = string
+      env_variables = map(any)
+      name          = string
     }))
+  }))
 }
 
 variable "tags" {
@@ -40,5 +40,5 @@ variable "tags" {
 
 variable "role_arn" {
   description = "Role ARN to use for the lambda functions"
-  type = string
+  type        = string
 }

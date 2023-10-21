@@ -23,7 +23,7 @@ variable "apigw_arn" {
 variable "endpoint" {
   description = "The information about the endpoint associated with this lambda. The method field should be all uppercase ('GET', 'POST') and the path MUST contain the starting '/'"
   type = object({
-    path = string
+    path   = string
     method = string
   })
 }
@@ -35,10 +35,10 @@ variable "env_variables" {
 
 variable "role_arn" {
   description = "Role ARN to use for the lambda function"
-  type = string
+  type        = string
 }
 
 variable "zip_name" {
-    description = "The name of the zip file to upload (without the .zip), located in the `resources/lambda_sources` directory"
-    type        = string
+  description = "The name of the zip file to upload (without the .zip), located in the `resources/lambda_sources` directory"
+  type        = string
 }

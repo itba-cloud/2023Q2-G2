@@ -10,7 +10,7 @@ variable "parent_id" {
 variable "methods" {
   description = "A list of the available methods for this resource."
   type = list(object({
-    http_method = string
+    http_method     = string
     integration_uri = string
   }))
 }
